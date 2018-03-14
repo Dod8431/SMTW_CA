@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{6CAA3CA3-EA4D-C483-0A9A-3E76C342B66A}</ProjectGuid>
+    <ProjectGuid>{DBA70B75-F9F7-F4A8-3B4C-D07D35B58448}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -124,7 +124,7 @@
  <HintPath>C:/Program Files/Unity2017.3/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="SmartFox2X">
- <HintPath>C:/Users/gamejam/Desktop/CA_Test/Assets/_Plugins/SmartFox2X.dll</HintPath>
+ <HintPath>C:/Users/gamejam/Desktop/SMTWCompanion/SHOW_ME_THE_WAY_COMPANION_APP/Assets/_Plugins/SmartFox2X.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Advertisements">
  <HintPath>C:/Users/gamejam/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.3/UnityEngine.Advertisements.dll</HintPath>
