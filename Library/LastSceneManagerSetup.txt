@@ -1,0 +1,7 @@
+sceneSetups:
+- path: Assets/CA_Main_Scene.unity
+  isLoaded: 1
+  isActive: 1
+- path: Assets/P1_Entrance_Riddle/P1_Entrance_Riddle.unity
+  isLoaded: 0
+  isActive: 0
