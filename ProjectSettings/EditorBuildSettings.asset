@@ -5,9 +5,12 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/CA_Main_Scene.unity
     guid: d59ab04a8a7207940a042a2ba1c5b5fd
-  - enabled: 1
+  - enabled: 0
     path: Assets/P1_Entrance_Riddle/P1_Entrance_Riddle.unity
     guid: 2d6165fd0884ee3459e70ef5d7a6b952
+  - enabled: 1
+    path: Assets/Scene/Gyro.unity
+    guid: 088bc5e30e15fbb4987362f5a5976899

@@ -9,7 +9,9 @@ public class CheckSwipe : MonoBehaviour {
     public bool waitForSwipe = false;
     public float swipeRange = 20f;
     Rigidbody vearb;
-    public float speed; 
+    public float speed;
+    float Deltax;
+    float Deltay;
 
     public GameObject vea;
 
@@ -20,7 +22,7 @@ public class CheckSwipe : MonoBehaviour {
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         ////Test
         if(Input.GetKey(KeyCode.UpArrow))
@@ -43,7 +45,6 @@ public class CheckSwipe : MonoBehaviour {
             vearb.velocity = new Vector3(speed, 0, 0);
         }
         ///////////////////////
-
 
         foreach (Touch touch in Input.touches)
         {
@@ -78,11 +79,21 @@ public class CheckSwipe : MonoBehaviour {
         if (verticalMove() > swipeRange && verticalMove() > horizontalMove())
         {
             //Debug.Log("Vertical");
-            if (fingerDown.y - fingerUp.y > 0)//up swipe
+            Deltay = fingerDown.y - fingerUp.y;
+            speed = Deltay / 25;
+            if (speed > 3)
+            {
+                speed = 3;
+            }
+            if (speed < -3)
+            {
+                speed = -3;
+            }
+            if (Deltay > 0)//up swipe
             {
                 OnSwipeUp();
             }
-            else if (fingerDown.y - fingerUp.y < 0)//Down swipe
+            else if (Deltay < 0)//Down swipe
             {
                 OnSwipeDown();
             }
@@ -92,12 +103,21 @@ public class CheckSwipe : MonoBehaviour {
         //Check if Horizontal swipe
         else if (horizontalMove() > swipeRange && horizontalMove() > verticalMove())
         {
-
-            if (fingerDown.x - fingerUp.x > 0)//Right swipe
+            Deltax = fingerDown.x - fingerUp.x;
+            speed = Deltax/25;
+            if (speed > 3)
+            {
+                speed = 3;
+            }
+            if (speed < -3)
+            {
+                speed = -3;
+            }
+            if (Deltax > 0)//Right swipe
             {
                 OnSwipeRight();
             }
-            else if (fingerDown.x - fingerUp.x < 0)//Left swipe
+            else if (Deltax < 0)//Left swipe
             {
                 OnSwipeLeft();
             }
@@ -125,13 +145,13 @@ public class CheckSwipe : MonoBehaviour {
     void OnSwipeDown()
     {
         Debug.Log("Swipe Down");
-        vearb.velocity = new Vector3(0, 0, -speed);
+        vearb.velocity = new Vector3(0, 0, speed);
     }
 
     void OnSwipeLeft()
     {
         Debug.Log("Swipe Left");
-        vearb.velocity = new Vector3(-speed, 0, 0);
+        vearb.velocity = new Vector3(speed, 0, 0);
     }
 
     void OnSwipeRight()
