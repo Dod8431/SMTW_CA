@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using Sfs2X;
 using Sfs2X.Core;
 using Sfs2X.Entities;
@@ -12,13 +13,17 @@ using Sfs2X.Logging;
 
 public class SFS2X_Connect : MonoBehaviour {
 
-	public string ServerIP = "127.0.0.1";
-	public int ServerPort = 9933;
-	public string ZoneName = "BasicExamples";
-	public string UserName = "";
-	public string RoomName = "The Lobby";
+	public InputField ip_field;
+	private int ServerPort = 9933;
+	private string ZoneName = "BasicExamples";
+	private string UserName = "";
+	private string RoomName = "The Lobby";
 
 	public bool P1_Entrance_Riddle = false;
+	public bool P1_Puzzle = false;
+	public bool P2_Puzzle = false;
+	public bool P2_Puzzle_Minigame = false;
+	public bool Maze = false;
 
 	SmartFox sfs;
 
@@ -38,8 +43,11 @@ public class SFS2X_Connect : MonoBehaviour {
 		sfs.AddEventListener (SFSEvent.ROOM_JOIN, OnJoinRoom);
 		sfs.AddEventListener (SFSEvent.ROOM_JOIN_ERROR, OnJoinRoomError);
 		sfs.AddEventListener (SFSEvent.OBJECT_MESSAGE, OnObjectRequest);
+	}
 
-		sfs.Connect (ServerIP, ServerPort);
+	public void Connect()
+	{
+		sfs.Connect (ip_field.text, ServerPort);
 	}
 
 	void OnLogin(BaseEvent evt)
@@ -69,6 +77,7 @@ public class SFS2X_Connect : MonoBehaviour {
 		if ((bool)evt.Params ["success"]) {
 			Debug.Log ("Successfully Connected");
 			sfs.Send (new LoginRequest (UserName, "", ZoneName));
+			SceneManager.LoadScene ("CA_Main_Scene");
 		} else {
 			Debug.Log ("Connection Failed");
 		}
