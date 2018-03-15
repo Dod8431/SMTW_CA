@@ -55,6 +55,9 @@
      <Compile Include="Assets\GameController.cs" />
      <Compile Include="Assets\P1_Entrance_Riddle\PZ1_GC.cs" />
      <Compile Include="Assets\P1_Entrance_Riddle\UIElementsDragger.cs" />
+     <Compile Include="Assets\Script\Camera_Controller_Gyro.cs" />
+     <Compile Include="Assets\Script\CameraControllerMiniGame.cs" />
+     <Compile Include="Assets\Script\CheckSwipe.cs" />
      <Compile Include="Assets\SFS2X_Send.cs" />
      <Compile Include="Assets\SlotHandler.cs" />
  <Reference Include="UnityEngine.UI">
