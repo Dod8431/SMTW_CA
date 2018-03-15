@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\_Scripts\_Network\SFS2X_Connect.cs" />
+     <Compile Include="Assets\Button_Handler.cs" />
      <Compile Include="Assets\GameController.cs" />
      <Compile Include="Assets\P1_Entrance_Riddle\PZ1_GC.cs" />
      <Compile Include="Assets\P1_Entrance_Riddle\UIElementsDragger.cs" />

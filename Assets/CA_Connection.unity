@@ -411,6 +411,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ip_field: {fileID: 1207396018}
   P1_Entrance_Riddle: 0
+  P1_Puzzle: 0
+  P2_Puzzle: 0
+  P2_Puzzle_Minigame: 0
+  Maze: 0
 --- !u!1 &485072873
 GameObject:
   m_ObjectHideFlags: 0
@@ -439,6 +443,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   networkmanager: {fileID: 0}
+  connectcomponent: {fileID: 0}
+  progress: 0
 --- !u!4 &485072875
 Transform:
   m_ObjectHideFlags: 0

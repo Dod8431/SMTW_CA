@@ -107,6 +107,6 @@ public class SFS2X_Connect : MonoBehaviour {
 	void OnObjectRequest(BaseEvent evt)
 	{
 		ISFSObject P1_Entrance = (SFSObject)evt.Params ["message"];
-		P1_Entrance_Riddle = P1_Entrance.GetBool ("check");
+		P1_Entrance_Riddle = P1_Entrance.GetBool ("P1_Entrance");
 	}
 }
