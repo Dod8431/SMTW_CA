@@ -8,6 +8,7 @@ public class CameraControllerMiniGame : MonoBehaviour {
     public float speed;
     private Vector3 veapos;
     bool exit = false;
+    public GameObject vea;
 	// Use this for initialization
 	void Start () {
 		
@@ -15,7 +16,8 @@ public class CameraControllerMiniGame : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(exit)
+        veapos = new Vector3(vea.transform.position.x, 2, vea.transform.position.z);
+        if (exit)
         {
             this.transform.position = Vector3.MoveTowards(this.transform.position, veapos, speed * Time.deltaTime);
             if (this.transform.position == veapos)
@@ -29,7 +31,6 @@ public class CameraControllerMiniGame : MonoBehaviour {
     {
         if (other.CompareTag ("Vea"))
         {
-            veapos = new Vector3 (other.transform.position.x,2, other.transform.position.z);
             exit = true;
         }
     }
