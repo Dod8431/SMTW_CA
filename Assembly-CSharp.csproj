@@ -52,16 +52,14 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\_Scripts\_Network\SFS2X_Connect.cs" />
-     <Compile Include="Assets\Button_Handler.cs" />
-     <Compile Include="Assets\GameController.cs" />
-     <Compile Include="Assets\Load.cs" />
-     <Compile Include="Assets\P1_Entrance_Riddle\PZ1_GC.cs" />
-     <Compile Include="Assets\P1_Entrance_Riddle\UIElementsDragger.cs" />
-     <Compile Include="Assets\Script\Camera_Controller_Gyro.cs" />
-     <Compile Include="Assets\Script\CameraControllerMiniGame.cs" />
-     <Compile Include="Assets\Script\CheckSwipe.cs" />
-     <Compile Include="Assets\SFS2X_Send.cs" />
-     <Compile Include="Assets\SlotHandler.cs" />
+     <Compile Include="Assets\_Scripts\PZ1_GC.cs" />
+     <Compile Include="Assets\_Scripts\UIElementsDragger.cs" />
+     <Compile Include="Assets\Script\Network\Button_Handler.cs" />
+     <Compile Include="Assets\Script\Network\GameController.cs" />
+     <Compile Include="Assets\Script\PZ1\SlotHandler.cs" />
+     <Compile Include="Assets\Script\PZ2\Camera_Controller_Gyro.cs" />
+     <Compile Include="Assets\Script\PZ2\CameraControllerMiniGame.cs" />
+     <Compile Include="Assets\Script\PZ2\CheckSwipe.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
