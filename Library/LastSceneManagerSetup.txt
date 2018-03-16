@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scene/CA_Main_Scene.unity
+- path: Assets/Scene/CA_Connection.unity
   isLoaded: 1
   isActive: 1
