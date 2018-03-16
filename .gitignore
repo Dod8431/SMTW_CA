@@ -23,6 +23,7 @@ sysinfo.txt
 *.dwlt
 Library/assetDatabase3
 *.dwlt
+Library/
 Library/metadata/25/25564cf18268aeb4b885931d4a5c18f4
 Library/metadata/61/61c2f44dd56938a419c4b812390e3406
 *.dll
