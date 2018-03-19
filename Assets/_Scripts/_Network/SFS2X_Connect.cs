@@ -25,6 +25,8 @@ public class SFS2X_Connect : MonoBehaviour {
 	public bool P2_Puzzle_Minigame = false;
 	public bool Maze = false;
 
+	public bool markglow = false;
+
 	SmartFox sfs;
 
 	void Awake()
@@ -53,7 +55,6 @@ public class SFS2X_Connect : MonoBehaviour {
 	void OnLogin(BaseEvent evt)
 	{
 		Debug.Log ("Logged In: " + evt.Params ["user"]);
-		GameObject.Find ("isConnected?").GetComponent<Text> ().color = Color.green;
 		sfs.Send (new JoinRoomRequest (RoomName));
 	}
 
@@ -77,7 +78,7 @@ public class SFS2X_Connect : MonoBehaviour {
 		if ((bool)evt.Params ["success"]) {
 			Debug.Log ("Successfully Connected");
 			sfs.Send (new LoginRequest (UserName, "", ZoneName));
-			SceneManager.LoadScene ("CA_Main_Scene");
+			SceneManager.LoadScene ("Awake_Room_Scene");
 		} else {
 			Debug.Log ("Connection Failed");
 		}
@@ -104,9 +105,18 @@ public class SFS2X_Connect : MonoBehaviour {
 
 	}
 
+	void AwakeRoomOpenDoor()
+	{
+		ISFSObject awakeroomopendoor = new SFSObject ();
+		awakeroomopendoor.PutBool ("awakeroomopendoor", true);
+		sfs.Send(new ObjectMessageRequest (awakeroomopendoor));
+	}
+
 	void OnObjectRequest(BaseEvent evt)
 	{
 		ISFSObject P1_Entrance = (SFSObject)evt.Params ["message"];
+		ISFSObject MarkGlowActive = (SFSObject)evt.Params ["message"];
+		markglow = MarkGlowActive.GetBool ("markglow");
 		P1_Entrance_Riddle = P1_Entrance.GetBool ("P1_Entrance");
 	}
 }
