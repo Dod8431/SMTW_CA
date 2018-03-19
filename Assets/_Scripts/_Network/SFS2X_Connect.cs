@@ -104,6 +104,14 @@ public class SFS2X_Connect : MonoBehaviour {
 
 	}
 
+    public void PZ2Mazeposition(float veax, float veaz)
+    {
+        ISFSObject veapos = new SFSObject();
+        veapos.PutFloat("px", veax);
+        veapos.PutFloat("pz", veaz);
+        sfs.Send(new ObjectMessageRequest(veapos));
+    }
+
 	void OnObjectRequest(BaseEvent evt)
 	{
 		ISFSObject P1_Entrance = (SFSObject)evt.Params ["message"];

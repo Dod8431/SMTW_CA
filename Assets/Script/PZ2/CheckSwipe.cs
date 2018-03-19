@@ -24,7 +24,7 @@ public class CheckSwipe : MonoBehaviour {
     // Update is called once per frame
     void FixedUpdate()
     {
-        ////Test
+       /////////////////////////////////////////////////////////////////Test PC///////////////////////////////////////////////////////////
         if(Input.GetKey(KeyCode.UpArrow))
         {
             vearb.velocity = new Vector3(0, 0, speed);
@@ -44,7 +44,7 @@ public class CheckSwipe : MonoBehaviour {
         {
             vearb.velocity = new Vector3(speed, 0, 0);
         }
-        ///////////////////////
+        //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
         foreach (Touch touch in Input.touches)
         {
