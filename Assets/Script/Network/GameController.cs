@@ -7,7 +7,9 @@ public class GameController : MonoBehaviour {
 
 	public GameObject networkmanager;
 	public SFS2X_Connect connectcomponent;
-
+    GameObject popUpButton;
+    GameObject veaMaze;
+    //bool onLittleMaze = false;
 	public int progress = 0;
 
 	void Awake () 
@@ -19,13 +21,31 @@ public class GameController : MonoBehaviour {
 	{
 		networkmanager = GameObject.Find ("Network_Manager");
 		connectcomponent = networkmanager.GetComponent<SFS2X_Connect> ();
-	}
+        Scene currentScene = SceneManager.GetActiveScene();
+        string sceneName = currentScene.name;
+
+        if (sceneName == "CA_Main_Scene") {
+          popUpButton = GameObject.Find("PopUpButton");
+        }
+        if (sceneName == "P2_Minigame_Scene")
+        {
+            veaMaze = GameObject.Find("Vea");
+            //onLittleMaze = true;
+        }
+       // else { onLittleMaze = false; }
+    }
 
 	void Update () 
 	{
+        
 		if (connectcomponent.P1_Entrance_Riddle == true || connectcomponent.P1_Puzzle == true || connectcomponent.P2_Puzzle == true || connectcomponent.P2_Puzzle_Minigame == true || connectcomponent.Maze == true) {
-			Debug.Log ("cc");
+            popUpButton.SetActive(true);
 		}
+        
+        if(progress == 4)
+        {
+            connectcomponent.PZ2Mazeposition(veaMaze.transform.position.x, veaMaze.transform.position.z);
+        }
 	}
 
 	public void Button_Scene()

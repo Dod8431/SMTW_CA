@@ -11,7 +11,7 @@ public class Button_Handler : MonoBehaviour {
 		gamecontroller = GameObject.Find ("CA_Manager");
 	}
 	
-	void OnClick()
+	public void LoadingScene()
 	{
 		gamecontroller.GetComponent<GameController> ().BroadcastMessage ("Button_Scene");
 	}
