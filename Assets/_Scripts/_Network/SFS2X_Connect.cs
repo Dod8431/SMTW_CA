@@ -104,15 +104,14 @@ public class SFS2X_Connect : MonoBehaviour {
 		sfs.Send (new ObjectMessageRequest (pz1entrancecomplete));
 
 	}
-
-<<<<<<< HEAD
+		
 	void AwakeRoomOpenDoor()
 	{
 		ISFSObject awakeroomopendoor = new SFSObject ();
 		awakeroomopendoor.PutBool ("awakeroomopendoor", true);
 		sfs.Send(new ObjectMessageRequest (awakeroomopendoor));
 	}
-=======
+
     public void PZ2Mazeposition(float veax, float veaz)
     {
         ISFSObject veapos = new SFSObject();
@@ -120,7 +119,7 @@ public class SFS2X_Connect : MonoBehaviour {
         veapos.PutFloat("pz", veaz);
         sfs.Send(new ObjectMessageRequest(veapos));
     }
->>>>>>> e2f94195cb0cf6e222314683eb94c634cf065982
+
 
 	void OnObjectRequest(BaseEvent evt)
 	{
