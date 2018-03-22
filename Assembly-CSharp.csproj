@@ -53,6 +53,7 @@
   <ItemGroup>
      <Compile Include="Assets\_Plugins\_MK\MKGlowFree\MKGlowFree.cs" />
      <Compile Include="Assets\_Scripts\_Network\SFS2X_Connect.cs" />
+     <Compile Include="Assets\Script\MainScene_Controller.cs" />
      <Compile Include="Assets\Script\Network\Button_Handler.cs" />
      <Compile Include="Assets\Script\Network\GameController.cs" />
      <Compile Include="Assets\Script\PZ1\AwakeRoomController.cs" />
