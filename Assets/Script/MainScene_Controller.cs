@@ -19,6 +19,7 @@ public class MainScene_Controller : MonoBehaviour {
         //state = GameObject.Find("CA_Manager").GetComponent<GameController>().progress;
         vea = GameObject.Find("Vea");
         speed = 20 * Time.deltaTime;
+        Screen.orientation = ScreenOrientation.Portrait;
     }
 
 

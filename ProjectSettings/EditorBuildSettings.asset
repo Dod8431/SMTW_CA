@@ -11,9 +11,9 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scene/Awake_Room_Scene.unity
     guid: a7ddb217c2d7af24988114a964e10397
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scene/CA_Main_Scene.unity
     guid: 428ba281ea78d5344bdd8925598a739c
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scene/P1_Scene.unity
     guid: dea3429908e964648b75eac179520b18
