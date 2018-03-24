@@ -17,7 +17,8 @@ public class AwakeRoomController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		network = GameObject.Find ("Network_Manager").GetComponent<SFS2X_Connect> ();
-	}
+        Screen.orientation = ScreenOrientation.Portrait;
+    }
 	
 	// Update is called once per frame
 	void Update () 
