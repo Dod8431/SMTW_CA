@@ -1,10 +1,4 @@
 sceneSetups:
-- path: Assets/Scene/CA_Connection.unity
-  isLoaded: 0
-  isActive: 0
-- path: Assets/Scene/Awake_Room_Scene.unity
+- path: Assets/Scene/Narration.unity
   isLoaded: 1
   isActive: 1
-- path: Assets/Scene/CA_Main_Scene.unity
-  isLoaded: 0
-  isActive: 0

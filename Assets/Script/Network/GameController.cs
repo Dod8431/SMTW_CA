@@ -7,7 +7,7 @@ public class GameController : MonoBehaviour {
 
 	public GameObject networkmanager;
 	public SFS2X_Connect connectcomponent;
-    GameObject popUpButton;
+    GameObject popUp;
     GameObject veaMaze;
     //bool onLittleMaze = false;
 	public int progress = 0;
@@ -25,7 +25,7 @@ public class GameController : MonoBehaviour {
         string sceneName = currentScene.name;
 
         if (sceneName == "CA_Main_Scene") {
-          popUpButton = GameObject.Find("PopUpButton");
+          popUp = GameObject.Find("PopUp");
         }
         if (sceneName == "P2_Minigame_Scene")
         {
@@ -39,7 +39,7 @@ public class GameController : MonoBehaviour {
 	{
         
 		if (connectcomponent.P1_Entrance_Riddle == true || connectcomponent.P1_Puzzle == true || connectcomponent.P2_Puzzle == true || connectcomponent.P2_Puzzle_Minigame == true || connectcomponent.Maze == true) {
-            popUpButton.SetActive(true);
+            popUp.SetActive(true);
 		}
         
         if(progress == 4)

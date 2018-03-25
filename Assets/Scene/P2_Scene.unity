@@ -62291,9 +62291,17 @@ GameObject:
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
   m_Component:
+<<<<<<< HEAD
   - component: {fileID: 2009068714}
   - component: {fileID: 2009068716}
   - component: {fileID: 2009068715}
+=======
+  - component: {fileID: 715753551}
+  - component: {fileID: 715753550}
+  - component: {fileID: 715753549}
+  - component: {fileID: 715753548}
+  - component: {fileID: 715753552}
+>>>>>>> 29e06e6cac0b54d10c1e3ae5efea18f359724688
   m_Layer: 0
   m_Name: Philodendron2 (2)
   m_TagString: Untagged
@@ -62466,6 +62474,7 @@ Transform:
   m_Father: {fileID: 41300534}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 --- !u!114 &2079545331
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62515,6 +62524,21 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+=======
+--- !u!114 &715753552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 715753547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59a28455d74791c46a192941bd040bdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gyroEnabled: 1
+  turnSpeed: 4
+>>>>>>> 29e06e6cac0b54d10c1e3ae5efea18f359724688
 --- !u!1 &2081256336
 GameObject:
   m_ObjectHideFlags: 0

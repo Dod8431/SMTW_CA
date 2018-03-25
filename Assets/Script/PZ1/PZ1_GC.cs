@@ -16,7 +16,8 @@ public class PZ1_GC : MonoBehaviour {
 	void Start ()
 	{
 		N_Manager = GameObject.Find ("Network_Manager");
-	}
+        Screen.orientation = ScreenOrientation.Landscape;
+    }
 
 	void Validate () 
 	{
