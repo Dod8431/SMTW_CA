@@ -4,8 +4,15 @@ timeCreated: 18446744011573954816
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
+    100000: //RootNode
+    100002: Ruin_B3:polySurface46
+    400000: //RootNode
+    400002: Ruin_B3:polySurface46
+    2300000: Ruin_B3:polySurface46
+    3300000: Ruin_B3:polySurface46
     4300000: polySurface46
     4300002: Ruin_B3:polySurface46
+    11100000: //RootNode
   externalObjects: {}
   materials:
     importMaterials: 0

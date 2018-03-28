@@ -4,7 +4,14 @@ timeCreated: 18446744011573954816
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
+    100000: //RootNode
+    100002: Rock1_LP:pCube1
+    400000: //RootNode
+    400002: Rock1_LP:pCube1
+    2300000: Rock1_LP:pCube1
+    3300000: Rock1_LP:pCube1
     4300000: Rock1_LP:pCube1
+    11100000: //RootNode
   externalObjects: {}
   materials:
     importMaterials: 0

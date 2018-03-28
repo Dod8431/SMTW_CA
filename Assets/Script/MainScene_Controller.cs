@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MainScene_Controller : MonoBehaviour {
 
@@ -13,10 +14,9 @@ public class MainScene_Controller : MonoBehaviour {
     GameObject vea;
     float speed;
 
-    // Use this for initialization
     void Start()
     {
-        //state = GameObject.Find("CA_Manager").GetComponent<GameController>().progress;
+        state = GameObject.Find("CA_Manager").GetComponent<GameController>().progress;
         vea = GameObject.Find("Vea");
         speed = 20 * Time.deltaTime;
         Screen.orientation = ScreenOrientation.Portrait;

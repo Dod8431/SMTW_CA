@@ -4,7 +4,14 @@ timeCreated: 18446744011573954816
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
+    100000: polySurface93_polySurface90
+    100002: //RootNode
+    400000: polySurface93_polySurface90
+    400002: //RootNode
+    2300000: polySurface93_polySurface90
+    3300000: polySurface93_polySurface90
     4300000: polySurface93_polySurface90
+    11100000: //RootNode
   externalObjects: {}
   materials:
     importMaterials: 0

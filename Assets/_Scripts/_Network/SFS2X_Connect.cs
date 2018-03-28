@@ -26,6 +26,7 @@ public class SFS2X_Connect : MonoBehaviour {
 	public bool Maze = false;
 
 	public bool markglow = false;
+    public int sceneIndex;
 
 	SmartFox sfs;
 
@@ -78,7 +79,7 @@ public class SFS2X_Connect : MonoBehaviour {
 		if ((bool)evt.Params ["success"]) {
 			Debug.Log ("Successfully Connected");
 			sfs.Send (new LoginRequest (UserName, "", ZoneName));
-			SceneManager.LoadScene ("Awake_Room_Scene");
+            SceneManager.LoadScene(1);
 		} else {
 			Debug.Log ("Connection Failed");
 		}
@@ -115,17 +116,27 @@ public class SFS2X_Connect : MonoBehaviour {
     public void PZ2Mazeposition(float veax, float veaz)
     {
         ISFSObject veapos = new SFSObject();
-        veapos.PutFloat("px", veax);
-        veapos.PutFloat("pz", veaz);
+        veapos.PutFloat("PZ2Mazex", veax);
+        veapos.PutFloat("PZ2Mazez", veaz);
         sfs.Send(new ObjectMessageRequest(veapos));
     }
 
 
 	void OnObjectRequest(BaseEvent evt)
 	{
-		ISFSObject P1_Entrance = (SFSObject)evt.Params ["message"];
+        ISFSObject P1_Entrance_RiddlePC = (SFSObject)evt.Params["message"];
+        ISFSObject P1_PuzzlePC = (SFSObject)evt.Params["message"];
+        ISFSObject P2_PuzzlePC = (SFSObject)evt.Params["message"];
+        ISFSObject P2_Puzzle_MinigamePC = (SFSObject)evt.Params["message"];
+        ISFSObject MazePC = (SFSObject)evt.Params ["message"];
 		ISFSObject MarkGlowActive = (SFSObject)evt.Params ["message"];
+        ISFSObject indexScene = (SFSObject)evt.Params["message"];
+        sceneIndex = indexScene.GetInt("sceneIndex");
 		markglow = MarkGlowActive.GetBool ("markglow");
-		P1_Entrance_Riddle = P1_Entrance.GetBool ("P1_Entrance");
-	}
+        P1_Entrance_Riddle = P1_Entrance_RiddlePC.GetBool("P1_Entrance");
+        P1_Puzzle = P1_PuzzlePC.GetBool("P1_Puzzle");
+        P2_Puzzle = P2_PuzzlePC.GetBool("P2_Puzzle");
+        P2_Puzzle_Minigame = P2_Puzzle_MinigamePC.GetBool("P2_Puzzle_Minigame");
+        Maze = MazePC.GetBool("Maze");
+    }
 }
