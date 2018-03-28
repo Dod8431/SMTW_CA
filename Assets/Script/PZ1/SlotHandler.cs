@@ -10,7 +10,7 @@ public class SlotHandler : MonoBehaviour, IDropHandler {
 	void Update()
 	{
 		if (gameObject.name == "Slot1") {
-			if (transform.GetChild (0).name == "04") {
+			if (transform.GetChild (0).name == "02") {
 				GameObject.Find ("GameController").GetComponent<PZ1_GC> ().slot1 = true;
 			} else {
 				GameObject.Find ("GameController").GetComponent<PZ1_GC> ().slot1 = false;
@@ -18,7 +18,7 @@ public class SlotHandler : MonoBehaviour, IDropHandler {
 		}
 
 		if (gameObject.name == "Slot2") {
-			if (transform.GetChild (0).name == "02") {
+			if (transform.GetChild (0).name == "03") {
 				GameObject.Find ("GameController").GetComponent<PZ1_GC> ().slot2 = true;
 			} else {
 				GameObject.Find ("GameController").GetComponent<PZ1_GC> ().slot2 = false;
@@ -27,7 +27,7 @@ public class SlotHandler : MonoBehaviour, IDropHandler {
 		}
 
 		if (gameObject.name == "Slot3") {
-			if (transform.GetChild (0).name == "03") {
+			if (transform.GetChild (0).name == "01") {
 				GameObject.Find ("GameController").GetComponent<PZ1_GC> ().slot3 = true;
 			} else {
 				GameObject.Find ("GameController").GetComponent<PZ1_GC> ().slot3 = false;
@@ -36,7 +36,7 @@ public class SlotHandler : MonoBehaviour, IDropHandler {
 		}
 
 		if (gameObject.name == "Slot4") {
-			if (transform.GetChild (0).name == "01") {
+			if (transform.GetChild (0).name == "04") {
 				GameObject.Find ("GameController").GetComponent<PZ1_GC> ().slot4 = true;
 			} else {
 				GameObject.Find ("GameController").GetComponent<PZ1_GC> ().slot4 = false;
