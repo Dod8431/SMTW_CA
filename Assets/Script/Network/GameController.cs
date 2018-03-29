@@ -7,7 +7,7 @@ public class GameController : MonoBehaviour {
 
 	public GameObject networkmanager;
 	public SFS2X_Connect connectcomponent;
-    GameObject popUp;
+    public GameObject popUp;
 	public int progress = 0;
 
 	void Awake () 
@@ -21,17 +21,13 @@ public class GameController : MonoBehaviour {
 		connectcomponent = networkmanager.GetComponent<SFS2X_Connect> ();
         Scene currentScene = SceneManager.GetActiveScene();
         string sceneName = currentScene.name;
-
-        if (sceneName == "CA_Main_Scene") {
-          popUp = GameObject.Find("PopUp");
-        }
     }
 
 	void Update () 
 	{
         
 		if (connectcomponent.P1_Entrance_Riddle == true || connectcomponent.P1_Puzzle == true || connectcomponent.P2_Puzzle == true || connectcomponent.P2_Puzzle_Minigame == true || connectcomponent.Maze == true) {
-            popUp.SetActive(true);
+            GameObject.Find("PopUp").GetComponent<Animator>().Play("PopUpAnim");
 		}
 	}
 

@@ -123,9 +123,9 @@
      <Compile Include="Assets\Puzzle_2\Aura\Structs\VolumeLevelsData.cs" />
      <Compile Include="Assets\Puzzle_2\Aura\Structs\VolumeTextureData.cs" />
      <Compile Include="Assets\Puzzle_2\Vegetation_Pack\shaders\0000 ats V2 package\atsV2 UnityTerrainBump Package\CustomTerrainScriptAtsV2.cs" />
+     <Compile Include="Assets\Script\Help.cs" />
      <Compile Include="Assets\Script\LoadSceneByIndex.cs" />
      <Compile Include="Assets\Script\MainScene_Controller.cs" />
-     <Compile Include="Assets\Script\Network\Button_Handler.cs" />
      <Compile Include="Assets\Script\Network\GameController.cs" />
      <Compile Include="Assets\Script\PZ1\AwakeRoomController.cs" />
      <Compile Include="Assets\Script\PZ1\Mask_Controller.cs" />

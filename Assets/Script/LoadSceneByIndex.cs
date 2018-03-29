@@ -7,21 +7,33 @@ public class LoadSceneByIndex : MonoBehaviour {
 
     public GameObject networkmanager;
     public SFS2X_Connect connectcomponent;
-    int index;
-    // Use this for initialization
+    public int index;
+    public GameObject notif;
+    public GameObject narration;
+
     void Start () {
         networkmanager = GameObject.Find("Network_Manager");
         connectcomponent = networkmanager.GetComponent<SFS2X_Connect>();
+        Handheld.Vibrate();
     }
 	
-	// Update is called once per frame
 	void Update () {
-		
-	}
+        index = connectcomponent.sceneIndex;
+
+        if (index == 3)
+        {
+            narration.SetActive(true);
+            notif.SetActive(false);
+        }
+        else
+        {
+            notif.SetActive(true);
+            narration.SetActive(false);
+        }
+    }
 
     public void LoadScene()
     {
-        index = connectcomponent.sceneIndex;
         SceneManager.LoadScene(index);
     }
 }
