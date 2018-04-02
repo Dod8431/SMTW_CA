@@ -28,7 +28,17 @@ public class GameController : MonoBehaviour {
         
 		if (connectcomponent.P1_Entrance_Riddle == true || connectcomponent.P1_Puzzle == true || connectcomponent.P2_Puzzle == true || connectcomponent.P2_Puzzle_Minigame == true || connectcomponent.Maze == true) {
             GameObject.Find("PopUp").GetComponent<Animator>().Play("PopUpAnim");
+            connectcomponent.P1_Entrance_Riddle = false;
+            connectcomponent.P1_Puzzle = false;
+            connectcomponent.P2_Puzzle = false;
 		}
+
+        if(connectcomponent.MainScene == true)
+        {
+            SceneManager.LoadScene(connectcomponent.sceneIndex);
+            progress++;
+            connectcomponent.MainScene = false;
+        }
 	}
 
 	public void Button_Scene()

@@ -16,7 +16,6 @@ public class MainScene_Controller : MonoBehaviour {
 
     void Start()
     {
-        state = GameObject.Find("CA_Manager").GetComponent<GameController>().progress;
         vea = GameObject.Find("Vea");
         speed = 20 * Time.deltaTime;
         Screen.orientation = ScreenOrientation.Portrait;
@@ -25,7 +24,8 @@ public class MainScene_Controller : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-        if(state == 0)
+        state = GameObject.Find("CA_Manager").GetComponent<GameController>().progress;
+        if (state == 0)
         {
             vea.transform.Rotate(Vector3.forward, 3 * speed);
         }

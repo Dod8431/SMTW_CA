@@ -24,6 +24,7 @@ public class SFS2X_Connect : MonoBehaviour {
 	public bool P2_Puzzle = false;
 	public bool P2_Puzzle_Minigame = false;
 	public bool Maze = false;
+    public bool MainScene = false;
 
 	public bool markglow = false;
     public int sceneIndex;
@@ -129,6 +130,7 @@ public class SFS2X_Connect : MonoBehaviour {
         ISFSObject P2_PuzzlePC = (SFSObject)evt.Params["message"];
         ISFSObject P2_Puzzle_MinigamePC = (SFSObject)evt.Params["message"];
         ISFSObject MazePC = (SFSObject)evt.Params ["message"];
+        ISFSObject MainScenePC = (SFSObject)evt.Params["message"];
 		ISFSObject MarkGlowActive = (SFSObject)evt.Params ["message"];
         ISFSObject indexScene = (SFSObject)evt.Params["message"];
         sceneIndex = indexScene.GetInt("sceneIndex");
@@ -138,5 +140,6 @@ public class SFS2X_Connect : MonoBehaviour {
         P2_Puzzle = P2_PuzzlePC.GetBool("P2_Puzzle");
         P2_Puzzle_Minigame = P2_Puzzle_MinigamePC.GetBool("P2_Puzzle_Minigame");
         Maze = MazePC.GetBool("Maze");
+        MainScene = MainScenePC.GetBool("MainScene");
     }
 }

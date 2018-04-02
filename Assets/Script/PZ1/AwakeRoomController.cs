@@ -9,10 +9,7 @@ public class AwakeRoomController : MonoBehaviour {
 	public GameObject markglow;
 	public GameObject background;
 	public SFS2X_Connect network;
-	public GameObject doorright;
-	public GameObject doorleft;
-	public GameObject dooropen;
-	public GameObject doorbutton;
+    public GameObject doorpanel;
 
 	// Use this for initialization
 	void Start () {
@@ -32,7 +29,11 @@ public class AwakeRoomController : MonoBehaviour {
 
 	public void DoorOpen()
 	{
-		doorright.GetComponentInParent<Animator> ().Play ("AwakeRoom_OpenDoor");
+		doorpanel.GetComponent<Animator> ().Play ("Awake_Room_OpenDoor");
+        for (int i = 0; i < 6; i++)
+        {
+            Handheld.Vibrate();
+        }
 		network.BroadcastMessage ("AwakeRoomOpenDoor");
 		StartCoroutine (OpenAndLeave ());
 	}
@@ -42,15 +43,12 @@ public class AwakeRoomController : MonoBehaviour {
 		markglow.SetActive (true);
 		yield return new WaitForSeconds (4);
 		markglow.SetActive (false);
-		doorbutton.SetActive (true);
-		doorright.SetActive (true);
-		doorleft.SetActive (true);
-		dooropen.SetActive (true);
+        doorpanel.SetActive(true);
 	}
 
 	IEnumerator OpenAndLeave()
 	{
-		yield return new WaitForSeconds (2);
+		yield return new WaitForSeconds (5);
 		SceneManager.LoadScene ("CA_Main_Scene");
 
 	}
