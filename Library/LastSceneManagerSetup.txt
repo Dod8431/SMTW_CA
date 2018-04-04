@@ -1,10 +1,4 @@
 sceneSetups:
-- path: Assets/Scene/CA_Connection.unity
+- path: Assets/Scene/P2_Minigame_Scene.unity
   isLoaded: 1
   isActive: 1
-- path: Assets/Scene/Awake_Room_Scene.unity
-  isLoaded: 0
-  isActive: 0
-- path: Assets/Scene/P1_Scene.unity
-  isLoaded: 0
-  isActive: 0

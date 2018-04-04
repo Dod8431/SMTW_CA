@@ -5,20 +5,19 @@ using UnityEngine.SceneManagement;
 
 public class LoadSceneByIndex : MonoBehaviour {
 
-    public GameObject networkmanager;
-    public SFS2X_Connect connectcomponent;
+	public SFS2X_Connect network;
     public int index;
     public GameObject notif;
     public GameObject narration;
 
     void Start () {
-        networkmanager = GameObject.Find("Network_Manager");
-        connectcomponent = networkmanager.GetComponent<SFS2X_Connect>();
+		network = GameObject.Find ("Network_Manager").GetComponent<SFS2X_Connect> ();
         Handheld.Vibrate();
     }
 	
 	void Update () {
-        index = connectcomponent.sceneIndex;
+		
+		index = network.sceneIndex;
 
         if (index == 3)
         {

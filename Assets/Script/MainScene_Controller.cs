@@ -35,18 +35,28 @@ public class MainScene_Controller : MonoBehaviour {
         }
         if (state == 2)
         {
+            cross1.SetActive(true);
             RotateVea(cross2, cross3);
         }
         if (state == 3)
         {
+            cross1.SetActive(true);
+            cross2.SetActive(true);
             RotateVea(cross3, cross4);
         }
         if (state == 4)
         {
+            cross1.SetActive(true);
+            cross2.SetActive(true);
+            cross3.SetActive(true);
             RotateVea(cross4, cross5 );
         }
         if (state == 5)
         {
+            cross1.SetActive(true);
+            cross2.SetActive(true);
+            cross3.SetActive(true);
+            cross4.SetActive(true);
             cross5.SetActive(true);
         }
     }

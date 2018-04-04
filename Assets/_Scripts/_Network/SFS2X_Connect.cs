@@ -25,9 +25,16 @@ public class SFS2X_Connect : MonoBehaviour {
 	public bool P2_Puzzle_Minigame = false;
 	public bool Maze = false;
     public bool MainScene = false;
+    public bool Narrative = false;
 
-	public bool markglow = false;
+    public bool P2_M1 = false;
+    public bool P2_M2 = false;
+    public bool P2_M3 = false;
+    public bool P2_M4 = false;
+
+    public bool markglow = false;
     public int sceneIndex;
+    public int narrativeIndex;
 
 	SmartFox sfs;
 
@@ -122,6 +129,13 @@ public class SFS2X_Connect : MonoBehaviour {
         sfs.Send(new ObjectMessageRequest(veapos));
     }
 
+	void Narrative_End()
+	{
+		ISFSObject narrative_end = new SFSObject ();
+		narrative_end.PutBool ("narrativeend", true);
+		sfs.Send (new ObjectMessageRequest (narrative_end));
+	}
+
 
 	void OnObjectRequest(BaseEvent evt)
 	{
@@ -133,6 +147,15 @@ public class SFS2X_Connect : MonoBehaviour {
         ISFSObject MainScenePC = (SFSObject)evt.Params["message"];
 		ISFSObject MarkGlowActive = (SFSObject)evt.Params ["message"];
         ISFSObject indexScene = (SFSObject)evt.Params["message"];
+        ISFSObject narrativeIndexPC = (SFSObject)evt.Params["message"];
+        ISFSObject NarrativePC = (SFSObject)evt.Params["message"];
+		ISFSObject ButtonP2PC = (SFSObject)evt.Params ["message"];
+		P2_M1 = ButtonP2PC.GetBool ("1");
+		P2_M2 = ButtonP2PC.GetBool ("2");
+		P2_M3 = ButtonP2PC.GetBool ("3");
+		P2_M4 = ButtonP2PC.GetBool ("4");
+        Narrative = NarrativePC.GetBool("Narrative");
+        narrativeIndex = narrativeIndexPC.GetInt("narrativeIndex");
         sceneIndex = indexScene.GetInt("sceneIndex");
 		markglow = MarkGlowActive.GetBool ("markglow");
         P1_Entrance_Riddle = P1_Entrance_RiddlePC.GetBool("P1_Entrance");

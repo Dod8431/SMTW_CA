@@ -26,12 +26,15 @@ public class GameController : MonoBehaviour {
 	void Update () 
 	{
         
-		if (connectcomponent.P1_Entrance_Riddle == true || connectcomponent.P1_Puzzle == true || connectcomponent.P2_Puzzle == true || connectcomponent.P2_Puzzle_Minigame == true || connectcomponent.Maze == true) {
+		if (connectcomponent.P1_Entrance_Riddle == true || connectcomponent.P1_Puzzle == true || connectcomponent.P2_Puzzle == true || connectcomponent.P2_Puzzle_Minigame == true || connectcomponent.Maze == true || connectcomponent.Narrative == true) {
             GameObject.Find("PopUp").GetComponent<Animator>().Play("PopUpAnim");
             connectcomponent.P1_Entrance_Riddle = false;
             connectcomponent.P1_Puzzle = false;
             connectcomponent.P2_Puzzle = false;
-		}
+            connectcomponent.P2_Puzzle_Minigame = false;
+            connectcomponent.Maze = false;
+            connectcomponent.Narrative = false;
+        }
 
         if(connectcomponent.MainScene == true)
         {

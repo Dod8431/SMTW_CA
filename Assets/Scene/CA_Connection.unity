@@ -168,11 +168,11 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 60
+    m_Font: {fileID: 12800000, guid: 0a8b7539786c17d46b48289bb42dac79, type: 3}
+    m_FontSize: 180
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 6
+    m_MinSize: 1
     m_MaxSize: 300
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -415,6 +415,7 @@ MonoBehaviour:
   P2_Puzzle: 0
   P2_Puzzle_Minigame: 0
   Maze: 0
+  MainScene: 0
   markglow: 0
   sceneIndex: 0
 --- !u!1 &485072873
