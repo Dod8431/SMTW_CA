@@ -8,6 +8,7 @@ public class PZ2MiniGameController : MonoBehaviour {
     public Transform vea;
 
     void Start () {
+        Screen.orientation = ScreenOrientation.Portrait;
         sfs = GameObject.Find("Network_Manager").GetComponent<SFS2X_Connect>();
         vea = GameObject.Find("Vea").transform;
 

@@ -129,12 +129,26 @@ public class SFS2X_Connect : MonoBehaviour {
         sfs.Send(new ObjectMessageRequest(veapos));
     }
 
-	void Narrative_End()
+	void Narrative_End1()
 	{
 		ISFSObject narrative_end = new SFSObject ();
-		narrative_end.PutBool ("narrativeend", true);
+		narrative_end.PutBool ("narrativeend1", true);
 		sfs.Send (new ObjectMessageRequest (narrative_end));
 	}
+
+    void Narrative_End2()
+    {
+        ISFSObject narrative_end = new SFSObject();
+        narrative_end.PutBool("narrativeend2", true);
+        sfs.Send(new ObjectMessageRequest(narrative_end));
+    }
+
+    public void Maze_End()
+    {
+        ISFSObject mazeEnd = new SFSObject();
+        mazeEnd.PutBool("mazeValidate", true);
+        sfs.Send(new ObjectMessageRequest(mazeEnd));
+    }
 
 
 	void OnObjectRequest(BaseEvent evt)

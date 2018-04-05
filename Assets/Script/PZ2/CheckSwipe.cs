@@ -8,6 +8,7 @@ public class CheckSwipe : MonoBehaviour {
     Vector2 fingerUp;
     public bool waitForSwipe = false;
     public float swipeRange = 20f;
+    GameObject Camera;
     Rigidbody vearb;
     public float speed;
     float Deltax;
@@ -18,7 +19,7 @@ public class CheckSwipe : MonoBehaviour {
     // Use this for initialization
     void Start () {
         vearb = vea.GetComponent<Rigidbody>();
-
+        Camera = GameObject.Find("Main Camera");
     }
 
     // Update is called once per frame

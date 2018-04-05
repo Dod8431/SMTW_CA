@@ -146,8 +146,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -861.4504}
-  m_SizeDelta: {x: 1800, y: 3522.9}
+  m_AnchoredPosition: {x: 6.799988, y: -559.7336}
+  m_SizeDelta: {x: 1786.3, y: 2941.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &8819698
 MonoBehaviour:
@@ -176,20 +176,20 @@ MonoBehaviour:
     m_MinSize: 0
     m_MaxSize: 123
     m_Alignment: 3
-    m_AlignByGeometry: 0
+    m_AlignByGeometry: 1
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.2
   m_Text: "A mesure que l'explorateur avance seul dans le temple, nous en apprenons
     un peu plus sur son histoire gr\xE2ce aux quelques fresques luisant sur notre
-    chemin.\r\nCelle en meilleure \xE9tat dans cette salle repr\xE9sente le \u201CDieu
+    chemin.\r\n\nCelle en meilleure \xE9tat dans cette salle repr\xE9sente le \u201CDieu
     soleil\u201D tr\xF4nant au dessus d'un temple dont l'entr\xE9e est gard\xE9e par
-    quatres individus. Leurs tenues et le sanctuaire arborent diff\xE9rents symboles
-    mais ceux-ci ne sont plus assez visibles pour \xEAtre d\xE9chiffr\xE9s. La pr\xE9sence
-    d'Inti renforce mon id\xE9e de lien entre le \"Dieu soleil\" et le temple. mais
-    la pr\xE9sence de toutes ces \xE9nigmes me laisse aussi penser qu'un myst\xE8re
-    autours d'Inti est prot\xE9g\xE9 dans ce temple.\r\n"
+    quatres individus. \n\nLeurs tenues et le sanctuaire arborent diff\xE9rents symboles
+    mais ceux-ci ne sont plus assez visibles pour \xEAtre d\xE9chiffr\xE9s. \n\nLa
+    pr\xE9sence d'Inti renforce mon id\xE9e de lien entre le \"Dieu soleil\" et le
+    temple. mais la pr\xE9sence de toutes ces \xE9nigmes me laisse aussi penser qu'un
+    myst\xE8re autours d'Inti est prot\xE9g\xE9 dans ce temple.\r\n"
 --- !u!222 &8819699
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -323,7 +323,7 @@ RectTransform:
   m_Father: {fileID: 759769506}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.4890573}
+  m_AnchorMin: {x: 0, y: 0.47858274}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
@@ -394,7 +394,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -861.4498}
+  m_AnchoredPosition: {x: 0, y: -842.94995}
   m_SizeDelta: {x: 1800, y: 3522.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &254191000
@@ -479,7 +479,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -861.4503}
+  m_AnchoredPosition: {x: 0, y: -842.95013}
   m_SizeDelta: {x: 1800, y: 3522.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &304897851
@@ -514,7 +514,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.2
-  m_Text: "\nAlors qu\u2019on ne pensait tomber que sur des vestiges \xE0 l\u2019int\xE9rieur
+  m_Text: "Alors qu\u2019on ne pensait tomber que sur des vestiges \xE0 l\u2019int\xE9rieur
     du temple, je suis surpris de voir que les premi\xE8res salles sont en bonne \xE9tat,
     ce qui les rends facile \xE0 traverser. On ne peut pas en dire autant des fresques
     murales... \r\n\nLa plupart se sont effondr\xE9es ou effrit\xE9es avec le temps,
@@ -549,7 +549,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &349366518
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1008,7 +1008,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 140002958}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.5109427
+  m_Size: 0.52141726
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1226,8 +1226,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.00011444057, y: -700}
-  m_SizeDelta: {x: 1920, y: 1800}
+  m_AnchoredPosition: {x: -0.00011444057, y: -795}
+  m_SizeDelta: {x: 1920, y: 1837}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &879702706
 MonoBehaviour:
@@ -1323,8 +1323,8 @@ RectTransform:
   m_Father: {fileID: 787089536}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 0.38124764}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -1396,8 +1396,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.00011444057, y: -700}
-  m_SizeDelta: {x: 1920, y: 1800}
+  m_AnchoredPosition: {x: -0.00011444057, y: -788.9004}
+  m_SizeDelta: {x: 1920, y: 1825}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &894577242
 MonoBehaviour:
@@ -1498,8 +1498,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.00011444057, y: -700}
-  m_SizeDelta: {x: 1920, y: 1800}
+  m_AnchoredPosition: {x: -0.00011444057, y: -805}
+  m_SizeDelta: {x: 1920, y: 1837}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &938827953
 MonoBehaviour:
@@ -1595,7 +1595,7 @@ RectTransform:
   m_Father: {fileID: 2017836631}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.48922664}
+  m_AnchorMin: {x: 0, y: 0.47855455}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
@@ -1709,7 +1709,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 962325721}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.51077336
+  m_Size: 0.52144545
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1848,14 +1848,14 @@ RectTransform:
   m_GameObject: {fileID: 1163836842}
   m_LocalRotation: {x: -0, y: -0.000000014901159, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -6.14}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1.0374997, z: 1}
   m_Children: []
   m_Father: {fileID: 349366521}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000022814, y: 900}
+  m_AnchoredPosition: {x: 0.000022814, y: 918}
   m_SizeDelta: {x: 1920, y: 1400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1163836845
@@ -1990,14 +1990,14 @@ RectTransform:
   m_GameObject: {fileID: 1324215196}
   m_LocalRotation: {x: -0, y: -0.000000014901159, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -6.14}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1.1, z: 1}
   m_Children: []
   m_Father: {fileID: 1770900921}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000022814, y: 900}
+  m_AnchoredPosition: {x: 0.000022814, y: 961}
   m_SizeDelta: {x: 1920, y: 1400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1324215199
@@ -2207,8 +2207,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000061035, y: 0}
-  m_SizeDelta: {x: 1920, y: 3200}
+  m_AnchoredPosition: {x: 0.000061035, y: -80}
+  m_SizeDelta: {x: 1920, y: 3267}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1499839453
 MonoBehaviour:
@@ -2320,7 +2320,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1554676962}
-        m_MethodName: Return
+        m_MethodName: Return1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2441,7 +2441,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 893534457}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.5109427
+  m_Size: 0.61875236
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2655,8 +2655,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000061035, y: 0}
-  m_SizeDelta: {x: 1920, y: 3200}
+  m_AnchoredPosition: {x: 0.000061035, y: -90}
+  m_SizeDelta: {x: 1920, y: 3267}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1787074202
 MonoBehaviour:
@@ -2798,14 +2798,14 @@ RectTransform:
   m_GameObject: {fileID: 1898421554}
   m_LocalRotation: {x: -0, y: -0.000000014901159, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -6.14}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1.0249996, z: 1}
   m_Children: []
   m_Father: {fileID: 71856057}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000022814, y: 900}
+  m_AnchoredPosition: {x: 0.000022814, y: 909}
   m_SizeDelta: {x: 1920, y: 1400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1898421556
@@ -3010,9 +3010,9 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: -17, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1954483185
 MonoBehaviour:
@@ -3187,8 +3187,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000061035, y: 0}
-  m_SizeDelta: {x: 1920, y: 3200}
+  m_AnchoredPosition: {x: 0.000061034996, y: -79.19153}
+  m_SizeDelta: {x: 1920, y: 3244}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2111824466
 MonoBehaviour:
@@ -3300,7 +3300,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1554676962}
-        m_MethodName: Return
+        m_MethodName: Return21
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

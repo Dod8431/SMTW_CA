@@ -5,30 +5,30 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scene/CA_Connection.unity
     guid: 57f02bb1791008f4883339f37ffd32d9
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scene/Awake_Room_Scene.unity
     guid: a7ddb217c2d7af24988114a964e10397
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scene/CA_Main_Scene.unity
     guid: 428ba281ea78d5344bdd8925598a739c
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scene/Narration.unity
     guid: 37be97a4f9db43443b0730cc44f88ec2
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scene/P1_Entrance_Riddle.unity
     guid: 2d6165fd0884ee3459e70ef5d7a6b952
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scene/P1_Scene.unity
     guid: dea3429908e964648b75eac179520b18
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scene/P2_Scene.unity
     guid: 8929f8c9fb3546d40a6b122c54608f3e
   - enabled: 1
     path: Assets/Scene/P2_Minigame_Scene.unity
     guid: 5e119882a16a8924b9690b5dd8c76c40
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scene/Maze_Scene.unity
     guid: b496ddab7ea98b54197922cbdb198292

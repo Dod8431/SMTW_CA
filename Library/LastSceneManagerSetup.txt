@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scene/P2_Minigame_Scene.unity
+- path: Assets/Scene/Narration.unity
   isLoaded: 1
   isActive: 1

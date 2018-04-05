@@ -9,10 +9,6 @@ public class CameraControllerMiniGame : MonoBehaviour {
     private Vector3 veapos;
     bool exit = false;
     public GameObject vea;
-	// Use this for initialization
-	void Start () {
-        Screen.orientation = ScreenOrientation.Portrait;
-    }
 	
 	// Update is called once per frame
 	void Update () {

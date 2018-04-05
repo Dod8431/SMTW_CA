@@ -49,7 +49,7 @@ public class MainScene_Controller : MonoBehaviour {
             cross1.SetActive(true);
             cross2.SetActive(true);
             cross3.SetActive(true);
-            RotateVea(cross4, cross5 );
+            RotateVea(cross4, cross5);
         }
         if (state == 5)
         {
@@ -58,6 +58,7 @@ public class MainScene_Controller : MonoBehaviour {
             cross3.SetActive(true);
             cross4.SetActive(true);
             cross5.SetActive(true);
+
         }
     }
 

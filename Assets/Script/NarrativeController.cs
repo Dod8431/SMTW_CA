@@ -41,9 +41,15 @@ public class NarrativeController : MonoBehaviour {
         }
     }
     
-    public void Return()
+    public void Return1()
     {
-		sfs.BroadcastMessage ("Narrative_End");
+		sfs.BroadcastMessage ("Narrative_End1");
+        SceneManager.LoadScene(2);
+    }
+
+    public void Return21()
+    {
+        sfs.BroadcastMessage("Narrative_End2");
         SceneManager.LoadScene(2);
     }
 }
