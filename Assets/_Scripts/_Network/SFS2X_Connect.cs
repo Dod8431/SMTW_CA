@@ -146,7 +146,7 @@ public class SFS2X_Connect : MonoBehaviour {
     public void Maze_End()
     {
         ISFSObject mazeEnd = new SFSObject();
-        mazeEnd.PutBool("mazeValidate", true);
+        mazeEnd.PutBool("mazevalid", true);
         sfs.Send(new ObjectMessageRequest(mazeEnd));
     }
 

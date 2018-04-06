@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -5769,6 +5769,92 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1658612692}
+--- !u!1001 &1680515690
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 22498054, guid: b3d64086f67023c48b38877106ff914e, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22498054, guid: b3d64086f67023c48b38877106ff914e, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22498054, guid: b3d64086f67023c48b38877106ff914e, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22498054, guid: b3d64086f67023c48b38877106ff914e, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22498054, guid: b3d64086f67023c48b38877106ff914e, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22498054, guid: b3d64086f67023c48b38877106ff914e, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22498054, guid: b3d64086f67023c48b38877106ff914e, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 22498054, guid: b3d64086f67023c48b38877106ff914e, type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 22498054, guid: b3d64086f67023c48b38877106ff914e, type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22498054, guid: b3d64086f67023c48b38877106ff914e, type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22498054, guid: b3d64086f67023c48b38877106ff914e, type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22498054, guid: b3d64086f67023c48b38877106ff914e, type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22498054, guid: b3d64086f67023c48b38877106ff914e, type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22498054, guid: b3d64086f67023c48b38877106ff914e, type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22498054, guid: b3d64086f67023c48b38877106ff914e, type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22498054, guid: b3d64086f67023c48b38877106ff914e, type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22498054, guid: b3d64086f67023c48b38877106ff914e, type: 2}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22498054, guid: b3d64086f67023c48b38877106ff914e, type: 2}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 154800, guid: b3d64086f67023c48b38877106ff914e, type: 2}
+      propertyPath: m_Name
+      value: Autofade
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: b3d64086f67023c48b38877106ff914e, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1713350928
 GameObject:
   m_ObjectHideFlags: 0
@@ -13036,8 +13122,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c137c75fcfb72a44a6ec46e4a2bc4e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  networkmanager: {fileID: 0}
-  connectcomponent: {fileID: 0}
+  network: {fileID: 0}
   index: 0
   notif: {fileID: 114909826}
   narration: {fileID: 1651134714}

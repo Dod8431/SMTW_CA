@@ -53,7 +53,7 @@
   <ItemGroup>
      <Compile Include="Assets\_Plugins\_MK\MKGlowFree\MKGlowFree.cs" />
      <Compile Include="Assets\_Scripts\_Network\SFS2X_Connect.cs" />
-     <Compile Include="Assets\P2_CA_Controller.cs" />
+     <Compile Include="Assets\AutoFadeAlternative\AutoFadeAlternative.cs" />
      <Compile Include="Assets\ProCore\ProBuilder\API Examples\Icosphere FFT\Scripts\CameraControls.cs" />
      <Compile Include="Assets\ProCore\ProBuilder\API Examples\Icosphere FFT\Scripts\IcoBumpin.cs" />
      <Compile Include="Assets\ProCore\ProBuilder\API Examples\Misc\HueCube.cs" />
@@ -70,11 +70,13 @@
      <Compile Include="Assets\Puzzle_2\ParticleSystems\Scripts\SmokeParticles.cs" />
      <Compile Include="Assets\Puzzle_2\ParticleSystems\Scripts\WaterHoseParticles.cs" />
      <Compile Include="Assets\Puzzle_2\Vegetation_Pack\shaders\0000 ats V2 package\atsV2 UnityTerrainBump Package\CustomTerrainScriptAtsV2.cs" />
+     <Compile Include="Assets\Script\AutoFade.cs" />
      <Compile Include="Assets\Script\Help.cs" />
      <Compile Include="Assets\Script\LoadSceneByIndex.cs" />
      <Compile Include="Assets\Script\MainScene_Controller.cs" />
      <Compile Include="Assets\Script\NarrativeController.cs" />
      <Compile Include="Assets\Script\Network\GameController.cs" />
+     <Compile Include="Assets\Script\P2_CA_Controller.cs" />
      <Compile Include="Assets\Script\PZ1\AwakeRoomController.cs" />
      <Compile Include="Assets\Script\PZ1\Mask_Controller.cs" />
      <Compile Include="Assets\Script\PZ1\PZ1_GC.cs" />
@@ -84,7 +86,7 @@
      <Compile Include="Assets\Script\PZ2\CameraControllerMiniGame.cs" />
      <Compile Include="Assets\Script\PZ2\CheckSwipe.cs" />
      <Compile Include="Assets\Script\PZ2\PZ2MiniGameController.cs" />
-     <Compile Include="Assets\TestFound.cs" />
+     <Compile Include="Assets\Script\TestFound.cs" />
      <None Include="Assets\_Plugins\_MK\MKGlowFree\Shader\Variants_SelectiveMode\Illumin\MK_Illumin-Glossy.shader" />
      <None Include="Assets\_Plugins\_MK\MKGlowFree\Shader\Render\MKGlowBlurInc.cginc" />
      <None Include="Assets\ProCore\ProBuilder\Shader\pb_TransparentOverlay.shader" />

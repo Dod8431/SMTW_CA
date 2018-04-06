@@ -29,7 +29,7 @@ public class AwakeRoomController : MonoBehaviour {
 
 	public void DoorOpen()
 	{
-		doorpanel.GetComponent<Animator> ().Play ("Awake_Room_OpenDoor");
+        doorpanel.GetComponent<Animator> ().Play ("Awake_Room_OpenDoor");
         for (int i = 0; i < 6; i++)
         {
             Handheld.Vibrate();
@@ -49,7 +49,7 @@ public class AwakeRoomController : MonoBehaviour {
 	IEnumerator OpenAndLeave()
 	{
 		yield return new WaitForSeconds (5);
-		SceneManager.LoadScene ("CA_Main_Scene");
+        SceneManager.LoadScene("CA_Main_Scene");
 
 	}
 

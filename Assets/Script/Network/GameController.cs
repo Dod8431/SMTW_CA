@@ -48,33 +48,28 @@ public class GameController : MonoBehaviour {
 	{
 		if (connectcomponent.P1_Entrance_Riddle == true) {
 			connectcomponent.P1_Entrance_Riddle = false;
-			progress += 1;
-			SceneManager.LoadScene ("P1_Entrance_Riddle");
+            SceneManager.LoadScene("P1_Entrance_Riddle");
 		}
 
 		if (connectcomponent.P1_Puzzle == true) {
 			connectcomponent.P1_Puzzle = false;
-			progress += 1;
-			SceneManager.LoadScene ("P1_Scene");
-		}
+            SceneManager.LoadScene("P1_Scene");
+        }
 
 		if (connectcomponent.P2_Puzzle == true) {
 			connectcomponent.P2_Puzzle = false;
-			progress += 1;
-			SceneManager.LoadScene ("P2_Scene");
-		}
+            SceneManager.LoadScene("P2_Scene");
+        }
 
 		if (connectcomponent.P2_Puzzle_Minigame == true) {
 			connectcomponent.P2_Puzzle_Minigame = false;
-			progress += 1;
-			SceneManager.LoadScene ("P2_Minigame_Scene");
-		}
+            SceneManager.LoadScene("P2_Minigame_Scene");
+        }
 
 		if (connectcomponent.Maze == true) {
 			connectcomponent.Maze = false;
-			progress += 1;
-			SceneManager.LoadScene ("Maze_Scene");
-		}
+            SceneManager.LoadScene("Maze_Scene");
+        }
 	}
 
 }
