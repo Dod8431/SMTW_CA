@@ -17,6 +17,7 @@ public class GameController : MonoBehaviour {
 
 	void Start()
 	{
+		Screen.sleepTimeout = SleepTimeout.NeverSleep;
 		networkmanager = GameObject.Find ("Network_Manager");
 		connectcomponent = networkmanager.GetComponent<SFS2X_Connect> ();
         Scene currentScene = SceneManager.GetActiveScene();
@@ -70,6 +71,11 @@ public class GameController : MonoBehaviour {
 			connectcomponent.Maze = false;
             SceneManager.LoadScene("Maze_Scene");
         }
+	}
+
+	public void Reboot()
+	{
+		progress = 0;	
 	}
 
 }

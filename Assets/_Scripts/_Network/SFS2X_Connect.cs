@@ -179,4 +179,22 @@ public class SFS2X_Connect : MonoBehaviour {
         Maze = MazePC.GetBool("Maze");
         MainScene = MainScenePC.GetBool("MainScene");
     }
+
+	public void Reboot()
+	{
+		P1_Entrance_Riddle = false;
+		P1_Puzzle = false;
+	  	P2_Puzzle = false;
+	  	P2_Puzzle_Minigame = false;
+	  	Maze = false;
+      	MainScene = false;
+      	Narrative = false;      
+	  	P2_M1 = false;
+      	P2_M2 = false;
+      	P2_M3 = false;
+      	P2_M4 = false;
+		markglow = false;
+      	sceneIndex = 0;
+    	narrativeIndex = 0;
+	}
 }
